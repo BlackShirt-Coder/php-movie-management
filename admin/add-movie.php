@@ -2,7 +2,11 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require_once "../movieController.php";
     $controller = new movieController();
-    $controller->addMovie();
+    if($_FILES['cover_image'] && $_POST['mv_title'] && $_POST['genres']){
+        $controller->addMovie();
+        $controller->coverImageUpload();
+    }
+
 
 }
 ?>
@@ -208,8 +212,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             $crud = new crud();
                                             $data = $crud->read('select * from genre');
                                             foreach ($data as $item) {
-                                                  ?>
-                                                <option value="<?php echo $item->genre_id ?>"><?php echo $item->genre_name  ?></option>
+                                                ?>
+                                                <option value="<?php echo $item->genre_id ?>"><?php echo $item->genre_name ?></option>
                                             <?php } ?>
                                         </select>
                                         <span class="help-block"></span>
@@ -233,8 +237,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn pull-right">Submit</button>
-                                        <a href="list-movies.html" class="btn pull-right" style="margin-right: 5px;">Back</a>
+                                        <button type="submit" class="btn pull-right" name="submit">Submit</button>
+                                        <a href="list-movies.php" class="btn pull-right"
+                                           style="margin-right: 5px;">Back</a>
                                     </div>
                                 </div>
                                 </form>

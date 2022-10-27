@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -22,38 +23,38 @@
 <body style="background-color: #26262d">
 
 <header>
-<nav class="navbar navbar-expand-lg fixed-top" style="color:#f0f0f0 !important;">
-    <a class="navbar-brand" href="http://localhost/movies_/">GoodMovies</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="color:#f0f0f0">
-        MENU
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="http://localhost/movies_/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost/movies_/#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="http://localhost/movies_/#">Contact us</a>
-            </li>
-        </ul>
-        <section class="yOpR1 wG6fJ" style="width:34%;color:#ffffff;">
-            <form action="http://localhost/movies_/index.php" method="GET">
-                <input class="" type="text" id="search-movies" placeholder="Find movies" name="search-item" required="" value="" style="width:100%">
-            </form></section>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active btn-signup">
-            <a class="nav-link" href="http://localhost/movies_/#" style="color:black !important;">Sign Up <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item btn-signin">
-                <a class="nav-link" href="http://localhost/movies_/#">Sign In</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top" style="color:#f0f0f0 !important;">
+        <a class="navbar-brand" href="http://localhost/movies_/">GoodMovies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="color:#f0f0f0">
+            MENU
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost/movies_/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/movies_/#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="http://localhost/movies_/#">Contact us</a>
+                </li>
+            </ul>
+            <section class="yOpR1 wG6fJ" style="width:34%;color:#ffffff;">
+                <form action="http://localhost/movies_/index.php" method="GET">
+                    <input class="" type="text" id="search-movies" placeholder="Find movies" name="search-item" required="" value="" style="width:100%">
+                </form></section>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active btn-signup">
+                    <a class="nav-link" href="http://localhost/movies_/#" style="color:black !important;">Sign Up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item btn-signin">
+                    <a class="nav-link" href="http://localhost/movies_/#">Sign In</a>
+                </li>
+            </ul>
 
-    </div>
-</nav>
+        </div>
+    </nav>
 </header>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 374px; overflow: hidden;background-size:cover">
@@ -98,7 +99,7 @@
 
     <div class="container marketing">
         <h3 class="mv-category-title">Most Popular</h3>
-        <div class="row" style="min-height: 300px;">            
+        <div class="row" style="min-height: 300px;">
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/movie_covers/murder in miami.PNG">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-            </div>             
+            </div>
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/movie_covers/things to do.PNG">
@@ -174,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-            </div>             
+            </div>
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/movie_covers/date_or_hire.PNG">
@@ -193,34 +194,34 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-12" style="text-align:center;margin-top:10px">
                 <nav aria-label="" class="pagination-centered" style="display: inline-block; background-color:inherit">
                     <ul class="pagination home-pagination">
                         <li class="page-item active">
-                    <a class="page-link" href="http://localhost/movies_/?&amp;page=1">1                        
-                    </a>
-               </li><li class="page-item ">
-                    <a class="page-link" href="http://localhost/movies_/?&amp;page=2">2                        
-                    </a>
-               </li><li class="page-item ">
-                    <a class="page-link" href="http://localhost/movies_/?&amp;page=3">3                        
-                    </a>
-               </li>                    </ul>
+                            <a class="page-link" href="http://localhost/movies_/?&amp;page=1">1
+                            </a>
+                        </li><li class="page-item ">
+                            <a class="page-link" href="http://localhost/movies_/?&amp;page=2">2
+                            </a>
+                        </li><li class="page-item ">
+                            <a class="page-link" href="http://localhost/movies_/?&amp;page=3">3
+                            </a>
+                        </li>                    </ul>
                 </nav>
             </div>
         </div><!-- /.row -->
     </div><!-- /.container -->
 
 
-    
+
 </main>
 <!-- FOOTER -->
 <footer class="container-fluid">
-        <p class="float-right"><a href="http://localhost/movies_/#">Back to top</a></p>
-        <p>© 2017-2018 Company, Inc. · <a href="http://localhost/movies_/#">Privacy</a> · <a href="http://localhost/movies_/#">Terms</a></p>
-    </footer>
+    <p class="float-right"><a href="http://localhost/movies_/#">Back to top</a></p>
+    <p>© 2017-2018 Company, Inc. · <a href="http://localhost/movies_/#">Privacy</a> · <a href="http://localhost/movies_/#">Terms</a></p>
+</footer>
 
 </body></html>

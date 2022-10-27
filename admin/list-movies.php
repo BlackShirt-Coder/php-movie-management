@@ -216,56 +216,33 @@
                     <tr>
                         <th>Movie Title</th> <th>Genre(s)</th> <th>Year Released</th><th>Cover Imagge</th> <th>Actions</th>
                     </tr>
-                        <tr>
-                                <td>Murder in miami</td>
-                                <td>Commedy,Action</td>
-                                <td>2019-05-20</td>
-                                <td style="width:15px"><img src="../images/movie_covers/murder in miami.PNG" height="25px" width="25px"></td>
-                                <td style="width:15px">
-                                    <a href="admin.php?action=edit-movie&id=58">edit</a>
-                                    <a href="admin.php?action=edit-movie">delete</a>
-                                </td>
-                        </tr>
-                         <tr>
-                            <td>Thong girl</td>
-                            <td>Commedy</td>
-                            <td>2019-05-19</td>
-                            <td style="width:15px"><img src="../images/movie_covers/thong_girl.PNG" height="25px" width="25px"></td>
-                            <td style="width:15px">
-                                <a href="admin.php?action=edit-movie&id=57">edit</a>
-                                <a href="admin.php?action=edit-movie">delete</a>
-                            </td>
-                         </tr>
-                        <tr>
-                            <td>Things to do</td>
-                            <td>Commedy</td>
-                            <td>2019-05-26</td>
-                            <td style="width:15px"><img src="../images/movie_covers/things to do.PNG" height="25px" width="25px"></td>
-                            <td style="width:15px">
-                                <a href="admin.php?action=edit-movie&id=56">edit</a>
-                                <a href="admin.php?action=edit-movie">delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Court</td>
-                            <td>Thriller</td>
-                            <td>2019-05-28</td>
-                            <td style="width:15px"><img src="../images/movie_covers/court.PNG" height="25px" width="25px"></td>
-                            <td style="width:15px">
-                                <a href="admin.php?action=edit-movie&id=55">edit</a>
-                                <a href="admin.php?action=edit-movie">delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Date or hire</td>
-                            <td>Commedy</td>
-                            <td>2019-03-04</td>
-                            <td style="width:15px"><img src="../images/movie_covers/date_or_hire.PNG" height="25px" width="25px"></td>
-                            <td style="width:15px">
-                                <a href="admin.php?action=edit-movie&id=54">edit</a>
-                                <a href="admin.php?action=edit-movie">delete</a>
-                            </td>
-                        </tr>
+
+                               <?php
+                               require_once "../crud.php";
+                               require_once "../movieController.php";
+                               $movies=new movieController();
+                               $res=$movies->getMovie();
+                               foreach($res as $movie){
+
+                                  ?>
+                    <tr>
+                        <td><?php echo $movie->movie_title ?></td>
+                        <td><?php echo $movie->genre_name ?></td>
+                        <td><?php echo $movie->movie_released ?></td>
+                        <td style="width:15px">
+                            <img src="<?php echo  $movie->img_path?>" height="25px" width="25px">
+                        </td>
+                        <td style="width:15px">
+                            <a href="admin.php?action=edit-movie&id=58">edit</a>
+                            <a href="admin.php?action=edit-movie">delete</a>
+                        </td>
+                    </tr>
+                               <?php
+                               }
+                               ?>
+
+
+
                 </table>
             </div>            
         </div>
